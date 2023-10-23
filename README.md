@@ -141,7 +141,7 @@ Cada vez que se quiera correr la API, dentro de la carpeta "Backend", ejecutar e
 node api.js
 ```
 
-Dentro de la carpeta "WebFrontend", ejecuta el siguiente comando en la terminal para instalar las dependencias de Express:
+Dentro de la carpeta "WebFrontend", ejecuta el siguiente comando en la terminal para instalar las dependencias:
 ```bash
 npm install
 ```
