@@ -123,5 +123,25 @@ ALTER TABLE IF EXISTS public.words
 ALTER TABLE admins
 ALTER COLUMN id
 ADD GENERATED ALWAYS AS IDENTITY
+```
+## Configuración del Entorno de Desarrollo
+Después de haber configurado la base de datos, es necesario preparar tu entorno de desarrollo. Asegúrate de tener instalados los siguientes componentes:
+
+- Visual Studio Code
+- Node.js
+- npm
+
+Dentro de la carpeta "backend", ejecuta el siguiente comando en la terminal para instalar las dependencias de Express:
+```bash
+npm install express
+```
+
+Cada vez que se quiera correr la API, dentro de la carpeta de backend, ejecutar el siguiente comendo:
+```bash
+node api.js.
+```
+
+
+
 
 
