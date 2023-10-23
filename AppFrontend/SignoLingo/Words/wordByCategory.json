@@ -1,0 +1,18 @@
+{
+    "words": [
+        {
+            "id": 1,
+            "word": "Manzana",
+            "categoryid": 1,
+            "definition": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "image": "apple",
+            "suggested1": "Azul",
+            "suggested2": "Pelota",
+            "video": "Alimentos_7_Manzana",
+            "idsettings": 1,
+            "isscannable": true,
+            "audio": "Manzana"
+            
+        }
+    ]
+}
