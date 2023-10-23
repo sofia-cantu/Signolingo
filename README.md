@@ -2,7 +2,7 @@
 Diccionario de lengua de señas/signos.
 
 ## Stack General
-- Base de datos: Postgres
+- Base de datos: Postgres y Javascript
 - Frontend del sitio web: React
 - Frontend de la Aplicación: SwiftUI
 
