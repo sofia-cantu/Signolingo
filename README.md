@@ -131,16 +131,25 @@ Después de haber configurado la base de datos, es necesario preparar tu entorno
 - Node.js
 - npm
 
-Dentro de la carpeta "backend", ejecuta el siguiente comando en la terminal para instalar las dependencias de Express:
+Dentro de la carpeta "Backend", ejecuta el siguiente comando en la terminal para instalar las dependencias de Express:
 ```bash
 npm install express
 ```
 
-Cada vez que se quiera correr la API, dentro de la carpeta de backend, ejecutar el siguiente comendo:
+Cada vez que se quiera correr la API, dentro de la carpeta "Backend", ejecutar el siguiente comendo:
 ```bash
-node api.js.
+node api.js
 ```
 
+Dentro de la carpeta "WebFrontend", ejecuta el siguiente comando en la terminal para instalar las dependencias de Express:
+```bash
+npm install
+```
+
+Cada vez que se quiera correr la pagina web, dentro de la carpeta "WebFrontend", ejecutar el siguiente comendo:
+```bash
+npm start
+```
 
 
 
