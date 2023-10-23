@@ -1,0 +1,972 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		251242602AC92A2000FA5153 /* LanguageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2512425F2AC92A2000FA5153 /* LanguageList.swift */; };
+		2534AF152AD3BC7400456E0F /* SuggestedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2534AF142AD3BC7400456E0F /* SuggestedButton.swift */; };
+		2539A78A2AC5F08000C7404B /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2539A7892AC5F08000C7404B /* CategoryViewModel.swift */; };
+		25439F212AC9089F0060F26D /* RotationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25439F202AC9089F0060F26D /* RotationButton.swift */; };
+		25439F232AC90A500060F26D /* CategoryTextCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25439F222AC90A500060F26D /* CategoryTextCircle.swift */; };
+		25439F252AC90B2D0060F26D /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25439F242AC90B2D0060F26D /* CircleButton.swift */; };
+		25439F272AC932B10060F26D /* WordListFiltered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25439F262AC932B10060F26D /* WordListFiltered.swift */; };
+		2543BE902ADDBC6B00304153 /* FoundWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2543BE8F2ADDBC6B00304153 /* FoundWordView.swift */; };
+		2559D28D2AB6D07800A441B3 /* SignoLingoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559D28C2AB6D07800A441B3 /* SignoLingoApp.swift */; };
+		2559D28F2AB6D07800A441B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559D28E2AB6D07800A441B3 /* ContentView.swift */; };
+		2559D2912AB6D07800A441B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2559D2902AB6D07800A441B3 /* Assets.xcassets */; };
+		2559D2942AB6D07800A441B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2559D2932AB6D07800A441B3 /* Preview Assets.xcassets */; };
+		2559D29E2AB6D07900A441B3 /* SignoLingoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559D29D2AB6D07900A441B3 /* SignoLingoTests.swift */; };
+		2559D2A82AB6D07900A441B3 /* SignoLingoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559D2A72AB6D07900A441B3 /* SignoLingoUITests.swift */; };
+		2559D2AA2AB6D07900A441B3 /* SignoLingoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559D2A92AB6D07900A441B3 /* SignoLingoUITestsLaunchTests.swift */; };
+		2559D2B72AB6D0B100A441B3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559D2B62AB6D0B100A441B3 /* MainView.swift */; };
+		2559D2BA2AB6D15B00A441B3 /* Chewy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2559D2B92AB6D15B00A441B3 /* Chewy-Regular.ttf */; };
+		2559D2BD2AB6D39300A441B3 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2559D2BC2AB6D39300A441B3 /* CategoryView.swift */; };
+		2573EF192ACA120300EF2A47 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2573EF182ACA120300EF2A47 /* IconButton.swift */; };
+		258E26C22AC5FAED002B2646 /* WordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258E26C12AC5FAED002B2646 /* WordModel.swift */; };
+		25AA5F372ACB3AAE007A3292 /* WordRowFiltered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AA5F362ACB3AAE007A3292 /* WordRowFiltered.swift */; };
+		25AA5F392ACB3CF4007A3292 /* WordDetailFiltered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AA5F382ACB3CF4007A3292 /* WordDetailFiltered.swift */; };
+		25AA5F3F2ACB8E5F007A3292 /* wordByCategory.json in Resources */ = {isa = PBXBuildFile; fileRef = 25AA5F3E2ACB8E5F007A3292 /* wordByCategory.json */; };
+		25AF7C1A2AB8AE40009F8DCB /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7C112AB8AE40009F8DCB /* WordList.swift */; };
+		25AF7C1C2AB8AE40009F8DCB /* WordRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7C132AB8AE40009F8DCB /* WordRow.swift */; };
+		25AF7C1F2AB8AE40009F8DCB /* SquareImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7C162AB8AE40009F8DCB /* SquareImage.swift */; };
+		25AF7C202AB8AE40009F8DCB /* ModelDataWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7C172AB8AE40009F8DCB /* ModelDataWord.swift */; };
+		25AF7C242AB8AEAB009F8DCB /* WordDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7C232AB8AEAB009F8DCB /* WordDetail.swift */; };
+		25AF7C262AB8CB7A009F8DCB /* SquareVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF7C252AB8CB7A009F8DCB /* SquareVideo.swift */; };
+		25C33B932AE0E00F0018CEEF /* Colores_1_Amarillo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B762AE0E00E0018CEEF /* Colores_1_Amarillo.gif */; };
+		25C33B942AE0E00F0018CEEF /* ABC_4_D.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B772AE0E00E0018CEEF /* ABC_4_D.gif */; };
+		25C33B952AE0E00F0018CEEF /* Juguetes_7_Muñeca.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B782AE0E00E0018CEEF /* Juguetes_7_Muñeca.gif */; };
+		25C33B962AE0E00F0018CEEF /* Colores_2_Azul.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B792AE0E00E0018CEEF /* Colores_2_Azul.gif */; };
+		25C33B972AE0E00F0018CEEF /* Numeros_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B7A2AE0E00E0018CEEF /* Numeros_2.gif */; };
+		25C33B982AE0E00F0018CEEF /* Numeros_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B7B2AE0E00E0018CEEF /* Numeros_3.gif */; };
+		25C33B992AE0E00F0018CEEF /* Colores_5_Morado.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B7C2AE0E00E0018CEEF /* Colores_5_Morado.gif */; };
+		25C33B9A2AE0E00F0018CEEF /* Juguetes_6_Pelota.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B7D2AE0E00E0018CEEF /* Juguetes_6_Pelota.gif */; };
+		25C33B9B2AE0E00F0018CEEF /* Animales_2_Gato.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B7E2AE0E00E0018CEEF /* Animales_2_Gato.gif */; };
+		25C33B9C2AE0E00F0018CEEF /* Juguetes_5_Triciclo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B7F2AE0E00E0018CEEF /* Juguetes_5_Triciclo.gif */; };
+		25C33B9D2AE0E00F0018CEEF /* Numeros_4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B802AE0E00E0018CEEF /* Numeros_4.gif */; };
+		25C33B9E2AE0E00F0018CEEF /* Animales_5_Pájaro.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B812AE0E00E0018CEEF /* Animales_5_Pájaro.gif */; };
+		25C33B9F2AE0E00F0018CEEF /* Familia_1_Mamá.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B822AE0E00E0018CEEF /* Familia_1_Mamá.gif */; };
+		25C33BA02AE0E00F0018CEEF /* Alimentos_7_Manzana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B832AE0E00E0018CEEF /* Alimentos_7_Manzana.gif */; };
+		25C33BA12AE0E00F0018CEEF /* ABC_3_C.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B842AE0E00E0018CEEF /* ABC_3_C.gif */; };
+		25C33BA22AE0E00F0018CEEF /* Numeros_1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B852AE0E00F0018CEEF /* Numeros_1.gif */; };
+		25C33BA32AE0E00F0018CEEF /* Familia_5_Hermana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B862AE0E00F0018CEEF /* Familia_5_Hermana.gif */; };
+		25C33BA42AE0E00F0018CEEF /* Familia_4_Hermano.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B872AE0E00F0018CEEF /* Familia_4_Hermano.gif */; };
+		25C33BA52AE0E00F0018CEEF /* Colores_10_Verde.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B882AE0E00F0018CEEF /* Colores_10_Verde.gif */; };
+		25C33BA62AE0E00F0018CEEF /* ABC_1_A.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B892AE0E00F0018CEEF /* ABC_1_A.gif */; };
+		25C33BA72AE0E00F0018CEEF /* ABC_2_B.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B8A2AE0E00F0018CEEF /* ABC_2_B.gif */; };
+		25C33BA82AE0E00F0018CEEF /* Familia_6_Abuelo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B8B2AE0E00F0018CEEF /* Familia_6_Abuelo.gif */; };
+		25C33BA92AE0E00F0018CEEF /* ABC_5_E.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B8C2AE0E00F0018CEEF /* ABC_5_E.gif */; };
+		25C33BAA2AE0E00F0018CEEF /* Juguetes_1_Carrito.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B8D2AE0E00F0018CEEF /* Juguetes_1_Carrito.gif */; };
+		25C33BAB2AE0E00F0018CEEF /* Colores_8_Rojo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B8E2AE0E00F0018CEEF /* Colores_8_Rojo.gif */; };
+		25C33BAC2AE0E00F0018CEEF /* Familia_2_Papá.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B8F2AE0E00F0018CEEF /* Familia_2_Papá.gif */; };
+		25C33BAD2AE0E00F0018CEEF /* Numeros_5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B902AE0E00F0018CEEF /* Numeros_5.gif */; };
+		25C33BAE2AE0E00F0018CEEF /* Animales_1_Perro.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B912AE0E00F0018CEEF /* Animales_1_Perro.gif */; };
+		25C33BAF2AE0E00F0018CEEF /* Familia_7_Abuela.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33B922AE0E00F0018CEEF /* Familia_7_Abuela.gif */; };
+		25C33BB32AE0F9F70018CEEF /* Signolingo.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 25C33BB22AE0F9F70018CEEF /* Signolingo.mlmodel */; };
+		25C33BB52AE0FD700018CEEF /* Juguetes_10_Payaso.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25C33BB42AE0FD700018CEEF /* Juguetes_10_Payaso.gif */; };
+		25C39FAC2ABCC31F00D783CC /* CircleButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C39FAB2ABCC31F00D783CC /* CircleButtons.swift */; };
+		25C39FAE2ABCD26E00D783CC /* CategoryTopButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C39FAD2ABCD26E00D783CC /* CategoryTopButtons.swift */; };
+		25C39FB02ABCE0C300D783CC /* CategorySettingsPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C39FAF2ABCE0C300D783CC /* CategorySettingsPopup.swift */; };
+		25DAE05A2AE196E7006FC274 /* Alimentos_1_Durazno.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25DAE0592AE196E7006FC274 /* Alimentos_1_Durazno.gif */; };
+		25DAE05C2AE1971A006FC274 /* Alimentos_2_Naranja.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25DAE05B2AE1971A006FC274 /* Alimentos_2_Naranja.gif */; };
+		25DAE05E2AE19745006FC274 /* Alimentos_3_Sandía.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25DAE05D2AE19745006FC274 /* Alimentos_3_Sandía.gif */; };
+		25DAE0602AE1976C006FC274 /* Alimentos_4_Uva.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25DAE05F2AE1976C006FC274 /* Alimentos_4_Uva.gif */; };
+		25DAE0622AE19798006FC274 /* Animales_3_Conejo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25DAE0612AE19798006FC274 /* Animales_3_Conejo.gif */; };
+		25DAE0682AE19B3D006FC274 /* Animales_4_Rana.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25DAE0672AE19B3D006FC274 /* Animales_4_Rana.gif */; };
+		25DDED842AD5CE9500913AC4 /* SuggestedWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DDED832AD5CE9500913AC4 /* SuggestedWordView.swift */; };
+		25E9EE972AD8677C00164A00 /* RoundedRectButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E9EE962AD8677C00164A00 /* RoundedRectButtonStyle.swift */; };
+		25FC442B2AD70FE900B7D162 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC442A2AD70FE900B7D162 /* TestView.swift */; };
+		25FC44322AD721AF00B7D162 /* PredictionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC44312AD721AF00B7D162 /* PredictionStatus.swift */; };
+		25FC44352AD7229400B7D162 /* mydata.json in Resources */ = {isa = PBXBuildFile; fileRef = 25FC44342AD7229400B7D162 /* mydata.json */; };
+		25FC44372AD722A400B7D162 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC44362AD722A400B7D162 /* Classification.swift */; };
+		25FC443C2AD722FE00B7D162 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC443B2AD722FE00B7D162 /* Helpers.swift */; };
+		25FC443E2AD7230500B7D162 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC443D2AD7230500B7D162 /* Constants.swift */; };
+		25FC44412AD7231A00B7D162 /* LiveCameraRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC443F2AD7231A00B7D162 /* LiveCameraRepresentable.swift */; };
+		25FC44422AD7231A00B7D162 /* LiveCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC44402AD7231A00B7D162 /* LiveCameraViewController.swift */; };
+		25FC44442AD723C000B7D162 /* PredictionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC44432AD723C000B7D162 /* PredictionResultView.swift */; };
+		25FC44462AD723DC00B7D162 /* ClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC44452AD723DC00B7D162 /* ClassifierViewModel.swift */; };
+		25FC44482AD724C900B7D162 /* ClassificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FC44472AD724C900B7D162 /* ClassificationView.swift */; };
+		25FEB6952ABABCC40077E693 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FEB6942ABABCC40077E693 /* CategoryModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2559D29A2AB6D07900A441B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2559D2812AB6D07800A441B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2559D2882AB6D07800A441B3;
+			remoteInfo = SignoLingo;
+		};
+		2559D2A42AB6D07900A441B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2559D2812AB6D07800A441B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2559D2882AB6D07800A441B3;
+			remoteInfo = SignoLingo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2512425F2AC92A2000FA5153 /* LanguageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageList.swift; sourceTree = "<group>"; };
+		2534AF142AD3BC7400456E0F /* SuggestedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedButton.swift; sourceTree = "<group>"; };
+		2539A7892AC5F08000C7404B /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		25439F202AC9089F0060F26D /* RotationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationButton.swift; sourceTree = "<group>"; };
+		25439F222AC90A500060F26D /* CategoryTextCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTextCircle.swift; sourceTree = "<group>"; };
+		25439F242AC90B2D0060F26D /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		25439F262AC932B10060F26D /* WordListFiltered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListFiltered.swift; sourceTree = "<group>"; };
+		2543BE8F2ADDBC6B00304153 /* FoundWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundWordView.swift; sourceTree = "<group>"; };
+		2559D2892AB6D07800A441B3 /* SignoLingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignoLingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2559D28C2AB6D07800A441B3 /* SignoLingoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignoLingoApp.swift; sourceTree = "<group>"; };
+		2559D28E2AB6D07800A441B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2559D2902AB6D07800A441B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2559D2932AB6D07800A441B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2559D2992AB6D07900A441B3 /* SignoLingoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignoLingoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2559D29D2AB6D07900A441B3 /* SignoLingoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignoLingoTests.swift; sourceTree = "<group>"; };
+		2559D2A32AB6D07900A441B3 /* SignoLingoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignoLingoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2559D2A72AB6D07900A441B3 /* SignoLingoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignoLingoUITests.swift; sourceTree = "<group>"; };
+		2559D2A92AB6D07900A441B3 /* SignoLingoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignoLingoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2559D2B62AB6D0B100A441B3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2559D2B92AB6D15B00A441B3 /* Chewy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chewy-Regular.ttf"; sourceTree = "<group>"; };
+		2559D2BB2AB6D17600A441B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2559D2BC2AB6D39300A441B3 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		2573EF182ACA120300EF2A47 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		258E26C12AC5FAED002B2646 /* WordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordModel.swift; sourceTree = "<group>"; };
+		25AA5F362ACB3AAE007A3292 /* WordRowFiltered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordRowFiltered.swift; sourceTree = "<group>"; };
+		25AA5F382ACB3CF4007A3292 /* WordDetailFiltered.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailFiltered.swift; sourceTree = "<group>"; };
+		25AA5F3E2ACB8E5F007A3292 /* wordByCategory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wordByCategory.json; sourceTree = "<group>"; };
+		25AF7C112AB8AE40009F8DCB /* WordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
+		25AF7C132AB8AE40009F8DCB /* WordRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordRow.swift; sourceTree = "<group>"; };
+		25AF7C162AB8AE40009F8DCB /* SquareImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareImage.swift; sourceTree = "<group>"; };
+		25AF7C172AB8AE40009F8DCB /* ModelDataWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDataWord.swift; sourceTree = "<group>"; };
+		25AF7C232AB8AEAB009F8DCB /* WordDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordDetail.swift; sourceTree = "<group>"; };
+		25AF7C252AB8CB7A009F8DCB /* SquareVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareVideo.swift; sourceTree = "<group>"; };
+		25C33B762AE0E00E0018CEEF /* Colores_1_Amarillo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Colores_1_Amarillo.gif; sourceTree = "<group>"; };
+		25C33B772AE0E00E0018CEEF /* ABC_4_D.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ABC_4_D.gif; sourceTree = "<group>"; };
+		25C33B782AE0E00E0018CEEF /* Juguetes_7_Muñeca.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Juguetes_7_Muñeca.gif"; sourceTree = "<group>"; };
+		25C33B792AE0E00E0018CEEF /* Colores_2_Azul.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Colores_2_Azul.gif; sourceTree = "<group>"; };
+		25C33B7A2AE0E00E0018CEEF /* Numeros_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Numeros_2.gif; sourceTree = "<group>"; };
+		25C33B7B2AE0E00E0018CEEF /* Numeros_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Numeros_3.gif; sourceTree = "<group>"; };
+		25C33B7C2AE0E00E0018CEEF /* Colores_5_Morado.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Colores_5_Morado.gif; sourceTree = "<group>"; };
+		25C33B7D2AE0E00E0018CEEF /* Juguetes_6_Pelota.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Juguetes_6_Pelota.gif; sourceTree = "<group>"; };
+		25C33B7E2AE0E00E0018CEEF /* Animales_2_Gato.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Animales_2_Gato.gif; sourceTree = "<group>"; };
+		25C33B7F2AE0E00E0018CEEF /* Juguetes_5_Triciclo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Juguetes_5_Triciclo.gif; sourceTree = "<group>"; };
+		25C33B802AE0E00E0018CEEF /* Numeros_4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Numeros_4.gif; sourceTree = "<group>"; };
+		25C33B812AE0E00E0018CEEF /* Animales_5_Pájaro.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Animales_5_Pájaro.gif"; sourceTree = "<group>"; };
+		25C33B822AE0E00E0018CEEF /* Familia_1_Mamá.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Familia_1_Mamá.gif"; sourceTree = "<group>"; };
+		25C33B832AE0E00E0018CEEF /* Alimentos_7_Manzana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Alimentos_7_Manzana.gif; sourceTree = "<group>"; };
+		25C33B842AE0E00E0018CEEF /* ABC_3_C.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ABC_3_C.gif; sourceTree = "<group>"; };
+		25C33B852AE0E00F0018CEEF /* Numeros_1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Numeros_1.gif; sourceTree = "<group>"; };
+		25C33B862AE0E00F0018CEEF /* Familia_5_Hermana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Familia_5_Hermana.gif; sourceTree = "<group>"; };
+		25C33B872AE0E00F0018CEEF /* Familia_4_Hermano.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Familia_4_Hermano.gif; sourceTree = "<group>"; };
+		25C33B882AE0E00F0018CEEF /* Colores_10_Verde.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Colores_10_Verde.gif; sourceTree = "<group>"; };
+		25C33B892AE0E00F0018CEEF /* ABC_1_A.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ABC_1_A.gif; sourceTree = "<group>"; };
+		25C33B8A2AE0E00F0018CEEF /* ABC_2_B.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ABC_2_B.gif; sourceTree = "<group>"; };
+		25C33B8B2AE0E00F0018CEEF /* Familia_6_Abuelo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Familia_6_Abuelo.gif; sourceTree = "<group>"; };
+		25C33B8C2AE0E00F0018CEEF /* ABC_5_E.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ABC_5_E.gif; sourceTree = "<group>"; };
+		25C33B8D2AE0E00F0018CEEF /* Juguetes_1_Carrito.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Juguetes_1_Carrito.gif; sourceTree = "<group>"; };
+		25C33B8E2AE0E00F0018CEEF /* Colores_8_Rojo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Colores_8_Rojo.gif; sourceTree = "<group>"; };
+		25C33B8F2AE0E00F0018CEEF /* Familia_2_Papá.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Familia_2_Papá.gif"; sourceTree = "<group>"; };
+		25C33B902AE0E00F0018CEEF /* Numeros_5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Numeros_5.gif; sourceTree = "<group>"; };
+		25C33B912AE0E00F0018CEEF /* Animales_1_Perro.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Animales_1_Perro.gif; sourceTree = "<group>"; };
+		25C33B922AE0E00F0018CEEF /* Familia_7_Abuela.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Familia_7_Abuela.gif; sourceTree = "<group>"; };
+		25C33BB22AE0F9F70018CEEF /* Signolingo.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Signolingo.mlmodel; sourceTree = "<group>"; };
+		25C33BB42AE0FD700018CEEF /* Juguetes_10_Payaso.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Juguetes_10_Payaso.gif; sourceTree = "<group>"; };
+		25C39FAB2ABCC31F00D783CC /* CircleButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtons.swift; sourceTree = "<group>"; };
+		25C39FAD2ABCD26E00D783CC /* CategoryTopButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTopButtons.swift; sourceTree = "<group>"; };
+		25C39FAF2ABCE0C300D783CC /* CategorySettingsPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySettingsPopup.swift; sourceTree = "<group>"; };
+		25DAE0592AE196E7006FC274 /* Alimentos_1_Durazno.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Alimentos_1_Durazno.gif; sourceTree = "<group>"; };
+		25DAE05B2AE1971A006FC274 /* Alimentos_2_Naranja.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Alimentos_2_Naranja.gif; sourceTree = "<group>"; };
+		25DAE05D2AE19745006FC274 /* Alimentos_3_Sandía.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Alimentos_3_Sandía.gif"; sourceTree = "<group>"; };
+		25DAE05F2AE1976C006FC274 /* Alimentos_4_Uva.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Alimentos_4_Uva.gif; sourceTree = "<group>"; };
+		25DAE0612AE19798006FC274 /* Animales_3_Conejo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Animales_3_Conejo.gif; sourceTree = "<group>"; };
+		25DAE0672AE19B3D006FC274 /* Animales_4_Rana.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Animales_4_Rana.gif; sourceTree = "<group>"; };
+		25DDED832AD5CE9500913AC4 /* SuggestedWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedWordView.swift; sourceTree = "<group>"; };
+		25E9EE962AD8677C00164A00 /* RoundedRectButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedRectButtonStyle.swift; sourceTree = "<group>"; };
+		25FC442A2AD70FE900B7D162 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		25FC44312AD721AF00B7D162 /* PredictionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionStatus.swift; sourceTree = "<group>"; };
+		25FC44342AD7229400B7D162 /* mydata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mydata.json; sourceTree = "<group>"; };
+		25FC44362AD722A400B7D162 /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		25FC443B2AD722FE00B7D162 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		25FC443D2AD7230500B7D162 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		25FC443F2AD7231A00B7D162 /* LiveCameraRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCameraRepresentable.swift; sourceTree = "<group>"; };
+		25FC44402AD7231A00B7D162 /* LiveCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCameraViewController.swift; sourceTree = "<group>"; };
+		25FC44432AD723C000B7D162 /* PredictionResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PredictionResultView.swift; sourceTree = "<group>"; };
+		25FC44452AD723DC00B7D162 /* ClassifierViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifierViewModel.swift; sourceTree = "<group>"; };
+		25FC44472AD724C900B7D162 /* ClassificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationView.swift; sourceTree = "<group>"; };
+		25FEB6942ABABCC40077E693 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2559D2862AB6D07800A441B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2559D2962AB6D07900A441B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2559D2A02AB6D07900A441B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		253293CD2AC1E6E100B6643A /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				25C33B892AE0E00F0018CEEF /* ABC_1_A.gif */,
+				25C33B8A2AE0E00F0018CEEF /* ABC_2_B.gif */,
+				25C33B842AE0E00E0018CEEF /* ABC_3_C.gif */,
+				25C33BB42AE0FD700018CEEF /* Juguetes_10_Payaso.gif */,
+				25C33B772AE0E00E0018CEEF /* ABC_4_D.gif */,
+				25C33B8C2AE0E00F0018CEEF /* ABC_5_E.gif */,
+				25DAE0612AE19798006FC274 /* Animales_3_Conejo.gif */,
+				25DAE0592AE196E7006FC274 /* Alimentos_1_Durazno.gif */,
+				25C33B832AE0E00E0018CEEF /* Alimentos_7_Manzana.gif */,
+				25C33B912AE0E00F0018CEEF /* Animales_1_Perro.gif */,
+				25DAE05F2AE1976C006FC274 /* Alimentos_4_Uva.gif */,
+				25C33B7E2AE0E00E0018CEEF /* Animales_2_Gato.gif */,
+				25DAE05B2AE1971A006FC274 /* Alimentos_2_Naranja.gif */,
+				25C33B812AE0E00E0018CEEF /* Animales_5_Pájaro.gif */,
+				25DAE05D2AE19745006FC274 /* Alimentos_3_Sandía.gif */,
+				25C33B762AE0E00E0018CEEF /* Colores_1_Amarillo.gif */,
+				25C33B792AE0E00E0018CEEF /* Colores_2_Azul.gif */,
+				25C33B7C2AE0E00E0018CEEF /* Colores_5_Morado.gif */,
+				25C33B8E2AE0E00F0018CEEF /* Colores_8_Rojo.gif */,
+				25C33B882AE0E00F0018CEEF /* Colores_10_Verde.gif */,
+				25C33B822AE0E00E0018CEEF /* Familia_1_Mamá.gif */,
+				25C33B8F2AE0E00F0018CEEF /* Familia_2_Papá.gif */,
+				25C33B872AE0E00F0018CEEF /* Familia_4_Hermano.gif */,
+				25C33B862AE0E00F0018CEEF /* Familia_5_Hermana.gif */,
+				25DAE0672AE19B3D006FC274 /* Animales_4_Rana.gif */,
+				25C33B8B2AE0E00F0018CEEF /* Familia_6_Abuelo.gif */,
+				25C33B922AE0E00F0018CEEF /* Familia_7_Abuela.gif */,
+				25C33B8D2AE0E00F0018CEEF /* Juguetes_1_Carrito.gif */,
+				25C33B7F2AE0E00E0018CEEF /* Juguetes_5_Triciclo.gif */,
+				25C33B7D2AE0E00E0018CEEF /* Juguetes_6_Pelota.gif */,
+				25C33B782AE0E00E0018CEEF /* Juguetes_7_Muñeca.gif */,
+				25C33B852AE0E00F0018CEEF /* Numeros_1.gif */,
+				25C33B7A2AE0E00E0018CEEF /* Numeros_2.gif */,
+				25C33B7B2AE0E00E0018CEEF /* Numeros_3.gif */,
+				25C33B802AE0E00E0018CEEF /* Numeros_4.gif */,
+				25C33B902AE0E00F0018CEEF /* Numeros_5.gif */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		2559D2802AB6D07800A441B3 = {
+			isa = PBXGroup;
+			children = (
+				2559D28B2AB6D07800A441B3 /* SignoLingo */,
+				2559D29C2AB6D07900A441B3 /* SignoLingoTests */,
+				2559D2A62AB6D07900A441B3 /* SignoLingoUITests */,
+				2559D28A2AB6D07800A441B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2559D28A2AB6D07800A441B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2559D2892AB6D07800A441B3 /* SignoLingo.app */,
+				2559D2992AB6D07900A441B3 /* SignoLingoTests.xctest */,
+				2559D2A32AB6D07900A441B3 /* SignoLingoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2559D28B2AB6D07800A441B3 /* SignoLingo */ = {
+			isa = PBXGroup;
+			children = (
+				2559D2BB2AB6D17600A441B3 /* Info.plist */,
+				2559D28C2AB6D07800A441B3 /* SignoLingoApp.swift */,
+				2559D2B62AB6D0B100A441B3 /* MainView.swift */,
+				2559D28E2AB6D07800A441B3 /* ContentView.swift */,
+				2512425F2AC92A2000FA5153 /* LanguageList.swift */,
+				25FC44452AD723DC00B7D162 /* ClassifierViewModel.swift */,
+				25FC44472AD724C900B7D162 /* ClassificationView.swift */,
+				25E9EE962AD8677C00164A00 /* RoundedRectButtonStyle.swift */,
+				25FC44432AD723C000B7D162 /* PredictionResultView.swift */,
+				25FC442E2AD7218900B7D162 /* Model */,
+				25FC44332AD7225F00B7D162 /* Data */,
+				25FC44382AD722B600B7D162 /* Foundation */,
+				25FEB6932ABABC7B0077E693 /* Category */,
+				25AF7C102AB8AE40009F8DCB /* Words */,
+				253293CD2AC1E6E100B6643A /* Videos */,
+				2559D2B82AB6D14300A441B3 /* Fonts */,
+				2559D2902AB6D07800A441B3 /* Assets.xcassets */,
+				2559D2922AB6D07800A441B3 /* Preview Content */,
+			);
+			path = SignoLingo;
+			sourceTree = "<group>";
+		};
+		2559D2922AB6D07800A441B3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2559D2932AB6D07800A441B3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2559D29C2AB6D07900A441B3 /* SignoLingoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2559D29D2AB6D07900A441B3 /* SignoLingoTests.swift */,
+			);
+			path = SignoLingoTests;
+			sourceTree = "<group>";
+		};
+		2559D2A62AB6D07900A441B3 /* SignoLingoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2559D2A72AB6D07900A441B3 /* SignoLingoUITests.swift */,
+				2559D2A92AB6D07900A441B3 /* SignoLingoUITestsLaunchTests.swift */,
+			);
+			path = SignoLingoUITests;
+			sourceTree = "<group>";
+		};
+		2559D2B82AB6D14300A441B3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2559D2B92AB6D15B00A441B3 /* Chewy-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		25AF7C102AB8AE40009F8DCB /* Words */ = {
+			isa = PBXGroup;
+			children = (
+				25AF7C112AB8AE40009F8DCB /* WordList.swift */,
+				25439F262AC932B10060F26D /* WordListFiltered.swift */,
+				25AA5F362ACB3AAE007A3292 /* WordRowFiltered.swift */,
+				25AF7C232AB8AEAB009F8DCB /* WordDetail.swift */,
+				25FC442A2AD70FE900B7D162 /* TestView.swift */,
+				25DDED832AD5CE9500913AC4 /* SuggestedWordView.swift */,
+				2543BE8F2ADDBC6B00304153 /* FoundWordView.swift */,
+				2534AF142AD3BC7400456E0F /* SuggestedButton.swift */,
+				25AA5F382ACB3CF4007A3292 /* WordDetailFiltered.swift */,
+				25AF7C132AB8AE40009F8DCB /* WordRow.swift */,
+				25AA5F3E2ACB8E5F007A3292 /* wordByCategory.json */,
+				25AF7C162AB8AE40009F8DCB /* SquareImage.swift */,
+				25AF7C252AB8CB7A009F8DCB /* SquareVideo.swift */,
+				25AF7C172AB8AE40009F8DCB /* ModelDataWord.swift */,
+				258E26C12AC5FAED002B2646 /* WordModel.swift */,
+			);
+			path = Words;
+			sourceTree = "<group>";
+		};
+		25FC442E2AD7218900B7D162 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				25C33BB22AE0F9F70018CEEF /* Signolingo.mlmodel */,
+				25FC44312AD721AF00B7D162 /* PredictionStatus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25FC44332AD7225F00B7D162 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				25FC44362AD722A400B7D162 /* Classification.swift */,
+				25FC44342AD7229400B7D162 /* mydata.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		25FC44382AD722B600B7D162 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				25FC443A2AD722CD00B7D162 /* CameraViewControllers */,
+				25FC44392AD722C500B7D162 /* Helpers */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		25FC44392AD722C500B7D162 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				25FC443D2AD7230500B7D162 /* Constants.swift */,
+				25FC443B2AD722FE00B7D162 /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		25FC443A2AD722CD00B7D162 /* CameraViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				25FC443F2AD7231A00B7D162 /* LiveCameraRepresentable.swift */,
+				25FC44402AD7231A00B7D162 /* LiveCameraViewController.swift */,
+			);
+			path = CameraViewControllers;
+			sourceTree = "<group>";
+		};
+		25FEB6932ABABC7B0077E693 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				25FEB6942ABABCC40077E693 /* CategoryModel.swift */,
+				25C39FAF2ABCE0C300D783CC /* CategorySettingsPopup.swift */,
+				25439F222AC90A500060F26D /* CategoryTextCircle.swift */,
+				25C39FAD2ABCD26E00D783CC /* CategoryTopButtons.swift */,
+				2559D2BC2AB6D39300A441B3 /* CategoryView.swift */,
+				2539A7892AC5F08000C7404B /* CategoryViewModel.swift */,
+				25439F242AC90B2D0060F26D /* CircleButton.swift */,
+				25C39FAB2ABCC31F00D783CC /* CircleButtons.swift */,
+				2573EF182ACA120300EF2A47 /* IconButton.swift */,
+				25439F202AC9089F0060F26D /* RotationButton.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2559D2882AB6D07800A441B3 /* SignoLingo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2559D2AD2AB6D07900A441B3 /* Build configuration list for PBXNativeTarget "SignoLingo" */;
+			buildPhases = (
+				2559D2852AB6D07800A441B3 /* Sources */,
+				2559D2862AB6D07800A441B3 /* Frameworks */,
+				2559D2872AB6D07800A441B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SignoLingo;
+			productName = SignoLingo;
+			productReference = 2559D2892AB6D07800A441B3 /* SignoLingo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2559D2982AB6D07900A441B3 /* SignoLingoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2559D2B02AB6D07900A441B3 /* Build configuration list for PBXNativeTarget "SignoLingoTests" */;
+			buildPhases = (
+				2559D2952AB6D07900A441B3 /* Sources */,
+				2559D2962AB6D07900A441B3 /* Frameworks */,
+				2559D2972AB6D07900A441B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2559D29B2AB6D07900A441B3 /* PBXTargetDependency */,
+			);
+			name = SignoLingoTests;
+			productName = SignoLingoTests;
+			productReference = 2559D2992AB6D07900A441B3 /* SignoLingoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2559D2A22AB6D07900A441B3 /* SignoLingoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2559D2B32AB6D07900A441B3 /* Build configuration list for PBXNativeTarget "SignoLingoUITests" */;
+			buildPhases = (
+				2559D29F2AB6D07900A441B3 /* Sources */,
+				2559D2A02AB6D07900A441B3 /* Frameworks */,
+				2559D2A12AB6D07900A441B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2559D2A52AB6D07900A441B3 /* PBXTargetDependency */,
+			);
+			name = SignoLingoUITests;
+			productName = SignoLingoUITests;
+			productReference = 2559D2A32AB6D07900A441B3 /* SignoLingoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2559D2812AB6D07800A441B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2559D2882AB6D07800A441B3 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					2559D2982AB6D07900A441B3 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 2559D2882AB6D07800A441B3;
+					};
+					2559D2A22AB6D07900A441B3 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 2559D2882AB6D07800A441B3;
+					};
+				};
+			};
+			buildConfigurationList = 2559D2842AB6D07800A441B3 /* Build configuration list for PBXProject "SignoLingo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2559D2802AB6D07800A441B3;
+			productRefGroup = 2559D28A2AB6D07800A441B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2559D2882AB6D07800A441B3 /* SignoLingo */,
+				2559D2982AB6D07900A441B3 /* SignoLingoTests */,
+				2559D2A22AB6D07900A441B3 /* SignoLingoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2559D2872AB6D07800A441B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25C33B982AE0E00F0018CEEF /* Numeros_3.gif in Resources */,
+				25C33BB52AE0FD700018CEEF /* Juguetes_10_Payaso.gif in Resources */,
+				25DAE0622AE19798006FC274 /* Animales_3_Conejo.gif in Resources */,
+				25C33BA42AE0E00F0018CEEF /* Familia_4_Hermano.gif in Resources */,
+				25C33B9A2AE0E00F0018CEEF /* Juguetes_6_Pelota.gif in Resources */,
+				25AA5F3F2ACB8E5F007A3292 /* wordByCategory.json in Resources */,
+				25C33BA52AE0E00F0018CEEF /* Colores_10_Verde.gif in Resources */,
+				25C33BA22AE0E00F0018CEEF /* Numeros_1.gif in Resources */,
+				25DAE05E2AE19745006FC274 /* Alimentos_3_Sandía.gif in Resources */,
+				25C33BAA2AE0E00F0018CEEF /* Juguetes_1_Carrito.gif in Resources */,
+				2559D2BA2AB6D15B00A441B3 /* Chewy-Regular.ttf in Resources */,
+				25DAE05A2AE196E7006FC274 /* Alimentos_1_Durazno.gif in Resources */,
+				25DAE05C2AE1971A006FC274 /* Alimentos_2_Naranja.gif in Resources */,
+				25C33BA02AE0E00F0018CEEF /* Alimentos_7_Manzana.gif in Resources */,
+				25C33BA12AE0E00F0018CEEF /* ABC_3_C.gif in Resources */,
+				25C33B9E2AE0E00F0018CEEF /* Animales_5_Pájaro.gif in Resources */,
+				2559D2942AB6D07800A441B3 /* Preview Assets.xcassets in Resources */,
+				25C33BA72AE0E00F0018CEEF /* ABC_2_B.gif in Resources */,
+				25C33B992AE0E00F0018CEEF /* Colores_5_Morado.gif in Resources */,
+				25C33BAF2AE0E00F0018CEEF /* Familia_7_Abuela.gif in Resources */,
+				25C33BAD2AE0E00F0018CEEF /* Numeros_5.gif in Resources */,
+				25C33B942AE0E00F0018CEEF /* ABC_4_D.gif in Resources */,
+				25C33BA32AE0E00F0018CEEF /* Familia_5_Hermana.gif in Resources */,
+				25C33B932AE0E00F0018CEEF /* Colores_1_Amarillo.gif in Resources */,
+				25C33BA62AE0E00F0018CEEF /* ABC_1_A.gif in Resources */,
+				2559D2912AB6D07800A441B3 /* Assets.xcassets in Resources */,
+				25C33B9F2AE0E00F0018CEEF /* Familia_1_Mamá.gif in Resources */,
+				25FC44352AD7229400B7D162 /* mydata.json in Resources */,
+				25C33B972AE0E00F0018CEEF /* Numeros_2.gif in Resources */,
+				25C33B9C2AE0E00F0018CEEF /* Juguetes_5_Triciclo.gif in Resources */,
+				25DAE0602AE1976C006FC274 /* Alimentos_4_Uva.gif in Resources */,
+				25C33BAB2AE0E00F0018CEEF /* Colores_8_Rojo.gif in Resources */,
+				25C33BAE2AE0E00F0018CEEF /* Animales_1_Perro.gif in Resources */,
+				25C33B962AE0E00F0018CEEF /* Colores_2_Azul.gif in Resources */,
+				25DAE0682AE19B3D006FC274 /* Animales_4_Rana.gif in Resources */,
+				25C33BA82AE0E00F0018CEEF /* Familia_6_Abuelo.gif in Resources */,
+				25C33B9D2AE0E00F0018CEEF /* Numeros_4.gif in Resources */,
+				25C33BA92AE0E00F0018CEEF /* ABC_5_E.gif in Resources */,
+				25C33B9B2AE0E00F0018CEEF /* Animales_2_Gato.gif in Resources */,
+				25C33BAC2AE0E00F0018CEEF /* Familia_2_Papá.gif in Resources */,
+				25C33B952AE0E00F0018CEEF /* Juguetes_7_Muñeca.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2559D2972AB6D07900A441B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2559D2A12AB6D07900A441B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2559D2852AB6D07800A441B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25439F232AC90A500060F26D /* CategoryTextCircle.swift in Sources */,
+				25AA5F392ACB3CF4007A3292 /* WordDetailFiltered.swift in Sources */,
+				258E26C22AC5FAED002B2646 /* WordModel.swift in Sources */,
+				25FC44322AD721AF00B7D162 /* PredictionStatus.swift in Sources */,
+				25FC442B2AD70FE900B7D162 /* TestView.swift in Sources */,
+				25FC44442AD723C000B7D162 /* PredictionResultView.swift in Sources */,
+				25AF7C262AB8CB7A009F8DCB /* SquareVideo.swift in Sources */,
+				25AF7C1A2AB8AE40009F8DCB /* WordList.swift in Sources */,
+				2543BE902ADDBC6B00304153 /* FoundWordView.swift in Sources */,
+				25FC443E2AD7230500B7D162 /* Constants.swift in Sources */,
+				2534AF152AD3BC7400456E0F /* SuggestedButton.swift in Sources */,
+				25AF7C1F2AB8AE40009F8DCB /* SquareImage.swift in Sources */,
+				25C39FB02ABCE0C300D783CC /* CategorySettingsPopup.swift in Sources */,
+				25AA5F372ACB3AAE007A3292 /* WordRowFiltered.swift in Sources */,
+				25FC44462AD723DC00B7D162 /* ClassifierViewModel.swift in Sources */,
+				25AF7C202AB8AE40009F8DCB /* ModelDataWord.swift in Sources */,
+				25AF7C242AB8AEAB009F8DCB /* WordDetail.swift in Sources */,
+				2573EF192ACA120300EF2A47 /* IconButton.swift in Sources */,
+				2559D28F2AB6D07800A441B3 /* ContentView.swift in Sources */,
+				2559D2B72AB6D0B100A441B3 /* MainView.swift in Sources */,
+				25AF7C1C2AB8AE40009F8DCB /* WordRow.swift in Sources */,
+				2539A78A2AC5F08000C7404B /* CategoryViewModel.swift in Sources */,
+				25C39FAC2ABCC31F00D783CC /* CircleButtons.swift in Sources */,
+				2559D2BD2AB6D39300A441B3 /* CategoryView.swift in Sources */,
+				25439F252AC90B2D0060F26D /* CircleButton.swift in Sources */,
+				25DDED842AD5CE9500913AC4 /* SuggestedWordView.swift in Sources */,
+				25FC44412AD7231A00B7D162 /* LiveCameraRepresentable.swift in Sources */,
+				25E9EE972AD8677C00164A00 /* RoundedRectButtonStyle.swift in Sources */,
+				25FEB6952ABABCC40077E693 /* CategoryModel.swift in Sources */,
+				25439F272AC932B10060F26D /* WordListFiltered.swift in Sources */,
+				25FC44422AD7231A00B7D162 /* LiveCameraViewController.swift in Sources */,
+				251242602AC92A2000FA5153 /* LanguageList.swift in Sources */,
+				25FC44482AD724C900B7D162 /* ClassificationView.swift in Sources */,
+				25C33BB32AE0F9F70018CEEF /* Signolingo.mlmodel in Sources */,
+				25FC443C2AD722FE00B7D162 /* Helpers.swift in Sources */,
+				25C39FAE2ABCD26E00D783CC /* CategoryTopButtons.swift in Sources */,
+				2559D28D2AB6D07800A441B3 /* SignoLingoApp.swift in Sources */,
+				25439F212AC9089F0060F26D /* RotationButton.swift in Sources */,
+				25FC44372AD722A400B7D162 /* Classification.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2559D2952AB6D07900A441B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2559D29E2AB6D07900A441B3 /* SignoLingoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2559D29F2AB6D07900A441B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2559D2A82AB6D07900A441B3 /* SignoLingoUITests.swift in Sources */,
+				2559D2AA2AB6D07900A441B3 /* SignoLingoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2559D29B2AB6D07900A441B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2559D2882AB6D07800A441B3 /* SignoLingo */;
+			targetProxy = 2559D29A2AB6D07900A441B3 /* PBXContainerItemProxy */;
+		};
+		2559D2A52AB6D07900A441B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2559D2882AB6D07800A441B3 /* SignoLingo */;
+			targetProxy = 2559D2A42AB6D07900A441B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2559D2AB2AB6D07900A441B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2559D2AC2AB6D07900A441B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2559D2AE2AB6D07900A441B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignoLingo/Preview Content\"";
+				DEVELOPMENT_TEAM = F895W2R8B7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SignoLingo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow camera access";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgl.SignoLingo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2559D2AF2AB6D07900A441B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SignoLingo/Preview Content\"";
+				DEVELOPMENT_TEAM = F895W2R8B7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SignoLingo/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow camera access";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgl.SignoLingo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2559D2B12AB6D07900A441B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F895W2R8B7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgl.SignoLingoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignoLingo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SignoLingo";
+			};
+			name = Debug;
+		};
+		2559D2B22AB6D07900A441B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F895W2R8B7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgl.SignoLingoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SignoLingo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SignoLingo";
+			};
+			name = Release;
+		};
+		2559D2B42AB6D07900A441B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F895W2R8B7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgl.SignoLingoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SignoLingo;
+			};
+			name = Debug;
+		};
+		2559D2B52AB6D07900A441B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F895W2R8B7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cgl.SignoLingoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SignoLingo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2559D2842AB6D07800A441B3 /* Build configuration list for PBXProject "SignoLingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2559D2AB2AB6D07900A441B3 /* Debug */,
+				2559D2AC2AB6D07900A441B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2559D2AD2AB6D07900A441B3 /* Build configuration list for PBXNativeTarget "SignoLingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2559D2AE2AB6D07900A441B3 /* Debug */,
+				2559D2AF2AB6D07900A441B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2559D2B02AB6D07900A441B3 /* Build configuration list for PBXNativeTarget "SignoLingoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2559D2B12AB6D07900A441B3 /* Debug */,
+				2559D2B22AB6D07900A441B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2559D2B32AB6D07900A441B3 /* Build configuration list for PBXNativeTarget "SignoLingoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2559D2B42AB6D07900A441B3 /* Debug */,
+				2559D2B52AB6D07900A441B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2559D2812AB6D07800A441B3 /* Project object */;
+}
