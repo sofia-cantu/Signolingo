@@ -140,6 +140,9 @@ Cada vez que se quiera correr la API, dentro de la carpeta "Backend", ejecutar e
 ```bash
 node api.js
 ```
+Considera lo siguiente:
+- En el caso de que hayas agregado una contraseña en la base de datos, entra al archivo .env y actualiza la contraseña en "DB_PASSWORD = password"
+- Si deseas trabajar con un Local Port Forwarding, utiliza la siguiente [documentación](https://code.visualstudio.com/docs/editor/port-forwarding)
 
 Dentro de la carpeta "WebFrontend", ejecuta el siguiente comando en la terminal para instalar las dependencias:
 ```bash
