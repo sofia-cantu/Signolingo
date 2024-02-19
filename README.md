@@ -142,6 +142,17 @@ node api.js
 ```
 Considera lo siguiente:
 - En el caso de que hayas agregado una contraseña en la base de datos, entra al archivo .env y actualiza la contraseña en "DB_PASSWORD = password"
+- En el caso de que no haya un enviorment, crea un archivo con lo siguiente:
+
+```plaintext
+# .env.example
+
+PORT = 3000
+DB_USER = postgres
+DB_HOST = localhost
+DB = SignAppDB
+DB_PASSWORD = pwd
+```
 - Si deseas trabajar con un Local Port Forwarding, utiliza la siguiente [documentación](https://code.visualstudio.com/docs/editor/port-forwarding)
 
 Dentro de la carpeta "WebFrontend", ejecuta el siguiente comando en la terminal para instalar las dependencias:
