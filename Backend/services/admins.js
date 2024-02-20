@@ -1,15 +1,16 @@
 const dbService = require('../config/db.js')
+const bcrypt = require('bcrypt');
 
 module.exports = {
     getAdmin: (id) => {
-        sql = ` SELECT id, email, username, isSuperUser
+        sql = ` SELECT id, email, name, isSuperUser
                 FROM admins 
                 WHERE id = ${id}`
 
         return dbService.querypromise(sql);
     },
     getAllAdmins: () => {
-        sql = "SELECT id, email, username, isSuperUser FROM admins"
+        sql = "SELECT id, email, name, isSuperUser FROM admins"
         return dbService.querypromise(sql);
     },
     deleteAdmin: (id) => {
@@ -18,11 +19,12 @@ module.exports = {
                 RETURNING *`
         return dbService.querypromise(sql);
     }, 
-    addAdmin: (body) => {
-        const {email, username, password, issuperuser} = body;
-        sql = ` INSERT INTO admins(email, username, password, issuperuser)
-                VALUES('${email}', '${username}', '${password}', '${issuperuser}') 
-                RETURNING *`
+    addAdmin: async (body) => {
+        const {email, name, password, issuperuser} = body;
+        const hashedPassword = await bcrypt.hash(password, 10);
+        const sql = `INSERT INTO admins(email, name, password, issuperuser)
+                     VALUES('${email}', '${name}', '${hashedPassword}', '${issuperuser}') 
+                     RETURNING *`;
         return dbService.querypromise(sql);
     },
 }
