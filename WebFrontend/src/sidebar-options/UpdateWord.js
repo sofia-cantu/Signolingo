@@ -21,7 +21,7 @@ function UpdateWord() {
   });
 
   useEffect(() => {
-    axios.get(`https://vc5kqp87-3000.usw3.devtunnels.ms/api/v1/categories/get/${id}`)
+    axios.get(`https://c9x08l7v-3000.usw3.devtunnels.ms/api/v1/categories/get/${id}`)
       .then((res) => {
         setValues({
           ...values,
@@ -46,7 +46,7 @@ const navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.put("https://vc5kqp87-3000.usw3.devtunnels.ms/api/v1/words/update/"+id, values)
+    axios.put("https://c9x08l7v-3000.usw3.devtunnels.ms/api/v1/words/update/"+id, values)
     .then(res => {
       console.log("Words updated successfully:", res.data);
         navigate("/edit-word");
@@ -59,7 +59,7 @@ const navigate = useNavigate()
 
   const handleDeleteWord = async (id) => {
     try {
-        await axios.delete('https://vc5kqp87-3000.usw3.devtunnels.ms/api/v1/words/delete/' + id)
+        await axios.delete('https://c9x08l7v-3000.usw3.devtunnels.ms/api/v1/words/delete/' + id)
         window.location.reload()
     }catch(err) {
         console.log(err);
@@ -123,7 +123,7 @@ const navigate = useNavigate()
               
             />
 
-            <label><strong>idsettings:</strong></label>
+            <label><strong>Selcciona el idioma (1=español):</strong></label>
             <input
               type="number"
               name="idsettings"

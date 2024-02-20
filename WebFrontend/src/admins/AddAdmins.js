@@ -21,7 +21,7 @@ function AddAdmins() {
 
     function handleSubmit(event) {
         event.preventDefault();
-        axios.post('https://vc5kqp87-3000.usw3.devtunnels.ms/api/v1/admins/add', {username, email, issuperuser})
+        axios.post('https://c9x08l7v-3000.usw3.devtunnels.ms/api/v1/admins/add', {username, email, issuperuser})
         .then(res => {
             console.log(res);
             setSuccess(true); // Set success to true

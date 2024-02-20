@@ -41,7 +41,7 @@ function Stats() {
         <h1>Estadísticas y Gráficas</h1>  
           <ul>
             {tracker.map((item, index) => (
-              <div className='box'> <li key={index}>{item.word} aparece {item.counter} veces</li></div>
+              <div className='box'> <li key={index}>{item.word} fue usado {item.counter} veces</li></div>
             ))}
           </ul>
 

@@ -54,36 +54,36 @@ function Login() {
 
    
     const handleApi = () => {
-    const button = document.querySelector('.btn-outline-success');
+        const button = document.querySelector('.btn-outline-success');
 
-    if (button) {
-        // Add the "hidden" class to hide the button
-        button.classList.add('hidden');
-        
+        if (button) {
+            // Add the "hidden" class to hide the button
+            button.classList.add('hidden');
+        }
+        console.log({ email, password });
+        axios
+            .post('https://vc5kqp87-3000.usw3.devtunnels.ms/api/v1/adminsauth/login', {
+                email: email,
+                password: password,
+                isSuperUser: isSuperUser
+            })
+            .then((result) => {
+                if (result.data.issuperuser) {
+                    setIsSuperUser(true);
+                    console.log("SI ES SUPER USUARIO", isSuperUser)
+                }
+                setIsButtons(true);
+                setSuccessLoggedIn(true); // Set success to true
+                login(); // Call the login function from the context to set isLoggedIn to true
+            })
+            .catch((error) => {
+                alert('El correo electrónico y/o la contraseña son incorrectos');
+                setIsButtons(false);
+                logout(); // Call the logout function from the context to set isLoggedIn to false
+                console.log(error);
+            });
     }
-    console.log({ email, password });
-    axios
-      .post('https://vc5kqp87-3000.usw3.devtunnels.ms/api/v1/adminsauth/login', {
-        email: email,
-        password: password,
-        isSuperUser: isSuperUser
-      })
-      .then((result) => {
-        if (result.data.issuperuser) {
-            setIsSuperUser(true);
-            console.log("SI ES SUPER USUSARIO", isSuperUser)
-        } 
-        setIsButtons(true);
-        setSuccessLoggedIn(true); // Set success to true
-        login(); // Call the login function from the context to set isLoggedIn to true
-      })
-      .catch((error) => {
-        alert('El correo electrónico y/o la contraseña son incorrectos');
-        setIsButtons(false);
-        logout(); // Call the logout function from the context to set isLoggedIn to false
-        console.log(error);
-      });
-  }
+
 
     return (
         <>

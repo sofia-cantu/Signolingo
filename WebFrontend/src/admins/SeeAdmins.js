@@ -9,7 +9,7 @@ function SeeAdmins() {
     const [successDelete, setSuccessDelete] = useState(false); // State to track success
     
     useEffect(() => {
-        axios.get('https://vc5kqp87-3000.usw3.devtunnels.ms/api/v1/admins/getall')
+        axios.get('https://c9x08l7v-3000.usw3.devtunnels.ms/api/v1/admins/getall')
           .then(res => {
             console.log('API Response:', res.data); // Log the API response data
             setAdmins(res.data.admins); // Update the admins state with the fetched data
@@ -22,7 +22,7 @@ function SeeAdmins() {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete('https://vc5kqp87-3000.usw3.devtunnels.ms/api/v1/admins/delete/' + id)
+            await axios.delete('https://c9x08l7v-3000.usw3.devtunnels.ms/api/v1/admins/delete/' + id)
             window.location.reload()
             setSuccessDelete(true); 
             
