@@ -165,6 +165,10 @@ Cada vez que se quiera correr la pagina web, dentro de la carpeta "WebFrontend",
 npm start
 ```
 
+La otra opción es utilizar [run build](https://create-react-app.dev/docs/deployment/)
 
+```bash
+npm run build
+```
 
 
