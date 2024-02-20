@@ -29,7 +29,7 @@ function CreateWord() {
 
 
   useEffect(() => {
-    axios.get('https://vc5kqp87-3000.usw3.devtunnels.ms/api/v1/categories/getall')
+    axios.get('https://c9x08l7v-3000.usw3.devtunnels.ms/api/v1/categories/getall')
       .then(res => {
         console.log('API Response category:', res.data); // Log the API response data
         setCategories(res.data.categories); // Update the admins state with the fetched data
@@ -40,7 +40,7 @@ function CreateWord() {
   console.log('categories Array:', categories); // Log the state of the admins array
 
   useEffect(() => {
-    axios.get('https://vc5kqp87-3000.usw3.devtunnels.ms/api/v1/words/getall')
+    axios.get('https://c9x08l7v-3000.usw3.devtunnels.ms/api/v1/words/getall')
       .then(res => {
         console.log('API Response words:', res.data); // Log the API response data
         setWords(res.data.words); // Update the admins state with the fetched data
@@ -297,7 +297,7 @@ function CreateWord() {
           
           
           <br />
-          <label><strong>Añade los idsettings:</strong></label>
+          <label><strong>Selcciona el idioma (1=español)::</strong></label>
 
             <br />
             <input

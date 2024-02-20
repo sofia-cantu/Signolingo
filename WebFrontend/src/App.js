@@ -55,7 +55,7 @@ function App(){
       <BrowserRouter>
           <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="/home" element={<ProtectedRoute element={<User />} />} />
+          
 
           <Route path="/home" element={<User />} />
           <Route path="/create-category" element={<CreateCategory/>} />

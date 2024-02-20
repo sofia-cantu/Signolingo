@@ -18,12 +18,12 @@ function EditWord() {
 
 
   useEffect(() => {
-    axios.get('https://vc5kqp87-3000.usw3.devtunnels.ms/api/v1/categories/getall')
+    axios.get('https://c9x08l7v-3000.usw3.devtunnels.ms/api/v1//categories/getall')
       .then(res => {
         console.log('API Response category:', res.data);
         setCategories(res.data.categories);
         // Fetch words data once categories data is available
-        axios.get('https://vc5kqp87-3000.usw3.devtunnels.ms/api/v1/words/getall')
+        axios.get('https://c9x08l7v-3000.usw3.devtunnels.ms/api/v1//words/getall')
           .then(res => {
             console.log('API Response words:', res.data);
             setWords(res.data.words);
