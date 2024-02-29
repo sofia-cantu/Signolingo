@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Main from './pages/MainTutorial';
+import Datos from './pages/Datos';
 import CrearC from './pages/CrearCategoria';
 import CrearP from './pages/CrearPalabra';
 import EditarC from './pages/EditarCategoria';
@@ -23,7 +25,9 @@ function App() {
       <div className='App'>
         <Sidebar />
         <Routes>
-          <Route path="/" element={<CrearC />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/datos" element={<Datos />} />
+          <Route path="/crear-categoria" element={<CrearC />} />
           <Route path='/crear-palabra' element={<CrearP />} />
           <Route path='/editar-categoria' element={<EditarC />} />
           <Route path='/editar-palabra' element={<EditarP />} />

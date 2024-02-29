@@ -3,7 +3,7 @@ import React from 'react'
 const CrearCategoria = () => {
   return (
     <div>
-        <h1>Crear Categoría</h1>
+        <h1>crear categoría</h1>
     </div>
   )
 }
