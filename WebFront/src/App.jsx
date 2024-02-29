@@ -1,36 +1,39 @@
-import { useState } from 'react'
-import logoSimple from './assets/LogoSimple.png'
-import reactLogo from './assets/react.svg'
-//import viteLogo from '/vite.svg'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import CrearC from './pages/CrearCategoria';
+import CrearP from './pages/CrearPalabra';
+import EditarC from './pages/EditarCategoria';
+import EditarP from './pages/EditarPalabra';
+import Sidebar from './components/Sidebar';
+
 import './App.css'
+import "./styles/main.scss"
+//import logoSimple from './assets/LogoSimple.png'
+
+/*
+<a href="https://diloensenas.org/" target="_blank">
+  <img src={logoSimple} className="logo" alt="Dilo en Señas logo" />
+</a>
+*/
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   return (
-    <>
-      <div>
-        <a href="https://diloensenas.org/" target="_blank">
-          <img src={logoSimple} className="logo" alt="ENS logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Router>
+      <div className='App'>
+        <Sidebar />
+        <Routes>
+          <Route path="/" element={<CrearC />} />
+          <Route path='/crear-palabra' element={<CrearP />} />
+          <Route path='/editar-categoria' element={<EditarC />} />
+          <Route path='/editar-palabra' element={<EditarP />} />
+        </Routes>
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+    </Router>
+
   )
 }
 
-export default App
+export default App;
