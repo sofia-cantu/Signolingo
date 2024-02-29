@@ -1,16 +1,11 @@
 @import "./_variables";
 
-body{
-    background-color: red;
-}
-
-/*
 body {
     overflow: hidden;
     height: 100vh;
     width: 100vw;
     font-family: $fontFamily;
-    background-color: $veryLightGreen;
+    background-color: $rosaClaro;
     text-transform: capitalize;
 }
 
@@ -21,6 +16,8 @@ h1 {
     align-items: center;
     justify-content: center;
 }
+
+/*
 
 .sidebar {
     background-color: $white;
