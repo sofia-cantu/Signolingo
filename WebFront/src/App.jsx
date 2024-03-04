@@ -8,8 +8,8 @@ import EditarC from './pages/EditarCategoria';
 import EditarP from './pages/EditarPalabra';
 import Sidebar from './components/Sidebar';
 
-import './App.css'
-import "./styles/main.scss"
+import './styles/App.scss'
+import "./styles/SideBar.scss"
 //import logoSimple from './assets/LogoSimple.png'
 
 /*

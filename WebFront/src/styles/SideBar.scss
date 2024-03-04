@@ -1,51 +1,52 @@
 @import "./_variables";
 
-body {
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
-    font-family: $fontFamily;
-    background-color: $rosaClaro;
-    text-transform: capitalize;
-}
-
-h1 {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*
 
 .sidebar {
-    background-color: $white;
+    background-color: $azul;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 2rem 3rem;
-    width: 15rem;
-    height: 100vh;
-    transition: 0.5s all;
+    padding: 0rem 1%;
+    width: 220px;
+    //height: 100vh;
+    //transition: 0.5s all;
 
     .logoContainer {
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        color: $azulClaro;
 
         h2.title {
-            font-size: 31.42px;
-            color: $green;
-            padding: 0 0 0 1rem;
+            font-size: 1.3rem;
+            color: $rosaClaro;
+            text-shadow: 0 0 0.5rem rgba($azulClaro, 0.4);
+            padding: 1.5rem 0rem 0rem 0rem;
         }
+
+        .logo {
+            height: 3.5rem;
+            padding: 1.5rem 1rem 0rem 1rem;
+            /*
+            will-change: filter;
+            transition: filter 300ms;
+            */
+          }
+          .logo:hover {
+            filter: drop-shadow(0 0 0.7rem rgba($azulClaro, 0.6));
+          }
+
     }
 
+
+
+    //Boton y movimiento raya
+    /*
     .burgerContainer {
         content: "";
-        background-color: $green;
+        background-color: $rosa;
         position: absolute;
-        right: (-35px / 2);
+        right: calc(-35px / 2);
         top: calc(9rem / 1.15);
         width: 35px;
         height: 35px;
@@ -65,7 +66,7 @@ h1 {
 
         .burgerMenu {
             content: "";
-            background-color: $green;
+            background-color: $rosa;
             position: relative;
             z-index: 1;
             width: 20px;
@@ -78,7 +79,7 @@ h1 {
 
         .burgerMenu::after {
             content: "";
-            background-color: $white;
+            background-color: $rosaClaro;
             position: absolute;
             width: 20px;
             height: 3px;
@@ -90,7 +91,7 @@ h1 {
 
         .burgerMenu::before {
             content: "";
-            background-color: $white;
+            background-color: $rosaClaro;
             position: absolute;
             width: 20px;
             height: 3px;
@@ -100,51 +101,53 @@ h1 {
             transition: 0.5s all;
         }
     }
-
+    */
+    
+    //Raya
+    /*
     .burgerContainer::after {
         content: "";
         position: absolute;
         right: 35px;
-        top: (35px / 2);
+        top: calc(35px / 2);
         z-index: 0;
         width: calc(6rem + 15rem);
         background-color: $lightGrey;
         height: 2px;
         transition: 0.5s all;
     }
+    */
 
+    //Texto Perfil
     .profileContainer {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        padding: 3rem 0 0 0;
-
-        img {
-            width: auto;
-            height: 3rem;
-        }
+        justify-content: center;
+        //height: 100vh; /* 100% of the viewport height */
+        padding: 2rem 0 0 0;
 
         .profileContents {
-            padding: 0 0 0 1rem;
+
+            text-align: center;
 
             p.name {
                 padding: 0;
                 margin: 0;
-                font-size: 16.7px;
-                color: $darkGrey;
+                font-size: 17px;
+                color: rgba($rosaClaro, 1);
                 text-transform: capitalize;
                 font-weight: $heavyFont;
+
+                text-shadow: 
+                    -1.5px -1.5px 0 rgba($rosa, 1),
+                    1.5px -1.5px 0 rgba($rosa, 1),
+                    -1.5px 1.5px 0 rgba($rosa, 1),
+                    1.5px 1.5px 0 rgba($rosa, 1);
             }
 
-            p {
-                padding: 0;
-                margin: 0;
-                font-size: 13.9px;
-                color: $darkGrey;
-                text-transform: lowercase;
-            }
         }
     }
+    
 
     .contentsContainer {
         margin: 2rem 0 0 0;
@@ -164,37 +167,41 @@ h1 {
                 justify-content: flex-start;
                 flex-direction: row;
                 margin: 0.75rem 0;
-                padding: 0.75rem 0;
+                padding: 0.8rem 0;
                 width: 100%;
                 border-radius: 1rem;
                 cursor: pointer;
 
                 img {
-                    padding: 0 1rem 0 0.5rem;
+                    padding: 0 0.7rem 0 0.5rem;
+                    width: 29px;
                 }
 
                 a {
                     text-decoration: none;
-                    color: $darkGrey;
-                    font-size: 20px;
+                    color: rgba($azulClaro, 0.95);
+                    font-size: 17px;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     margin: 0 0 0 0.5rem;
                 }
             }
-
+            /*
             li.active {
-                background-color: $veryLightGreen;
+                background-color: $rosa;
 
                 a {
-                    color: $green;
+                    color: $rosa;
                 }
             }
-
+            */
             li:hover {
-                background-color: $lightGrey;
+                background-color: $rosa;
                 transition: 0.25s;
+                a {
+                    color: $rosaClaro;
+                }
             }
         }
     }
@@ -213,7 +220,7 @@ h1 {
     .burgerContainer.active {
         transition: 0.5s all;
         .burgerMenu {
-            background-color: $white;
+            background-color: $rosaClaro;
             transition: 0.5s all;
         }
 
@@ -240,4 +247,3 @@ h1 {
         }
     }
 }
-*/
