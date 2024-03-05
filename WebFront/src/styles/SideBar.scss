@@ -7,19 +7,17 @@
     top: 0;
     left: 0;
     padding: 0rem 1%;
-    width: 220px;
-    //height: 100vh;
-    //transition: 0.5s all;
+    width: 14rem;
+    height: 100vh;
 
+    //Area 1: Logo
     .logoContainer {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
-        color: $azulClaro;
 
         h2.title {
             font-size: 1.3rem;
-            color: $rosaClaro;
+            color: $azulClaro;
             text-shadow: 0 0 0.5rem rgba($azulClaro, 0.4);
             padding: 1.5rem 0rem 0rem 0rem;
         }
@@ -27,16 +25,134 @@
         .logo {
             height: 3.5rem;
             padding: 1.5rem 1rem 0rem 1rem;
-            /*
-            will-change: filter;
-            transition: filter 300ms;
-            */
           }
           .logo:hover {
             filter: drop-shadow(0 0 0.7rem rgba($azulClaro, 0.6));
           }
 
     }
+
+
+    //Area 2: Texto Perfil
+    .profileContainer {
+        padding: 2rem 0 0 0;
+
+        .profileContents {
+            text-align: center;
+            p.name {
+                font-size: 1.1rem;
+                color: rgba($rosaClaro, 1);
+                text-transform: capitalize;
+                font-weight: $heavyFont;
+
+                text-shadow: 
+                    -0.1rem -0.1rem 0 rgba($rosa, 1),
+                    0.1rem -0.1rem 0 rgba($rosa, 1),
+                    -0.1rem 0.1rem 0 rgba($rosa, 1),
+                    0.1rem 0.1rem 0 rgba($rosa, 1);
+            }
+
+        }
+    }
+    
+    //Area 3: Navegador
+    .contentsContainer {
+        margin: 2rem 0 0 0;
+
+        ul {
+            //display: flex;
+            flex-direction: column;
+            padding: 0;
+
+            li {
+                display: flex;
+                //align-items: center;
+                justify-content: flex-start;
+                flex-direction: row;
+                margin: 0.75rem 0; //no se considera en el click, se considera desde el fin de la imagen
+                padding: 0.8rem 0; //se considera en el click, se considera desde el centr
+                width: 100%;
+                border-radius: 1rem;
+                cursor: pointer;
+
+                // Hex color to filter values: https://codepen.io/sosuke/pen/Pjoqqp 
+                .SideBarSVG {
+                    padding: 0 0.7rem 0 0.5rem;
+                    width: 29px;
+                    filter: $azulClaroF;
+                }
+                
+                a {
+                    text-decoration: none;
+                    color: rgba($azulClaro, 0.95);
+                    font-size: 1.05rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 0 0 0 0.5rem;
+                }
+            }
+
+            li:hover {
+                background-color: $rosa;
+                transition: 0.25s;
+                a {
+                    color: $rosaClaro;
+                }
+                .SideBarSVG {
+                    filter: $rosaClaroF;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+.sidebar.active {
+    width: 3rem;
+    transition: 0.5s all;
+
+    .logoContainer.active {
+        h2.title {
+            opacity: 0;
+        }
+    }
+
+    .burgerContainer.active {
+        transition: 0.5s all;
+        .burgerMenu {
+            background-color: $rosaClaro;
+            transition: 0.5s all;
+        }
+
+        .burgerMenu::before {
+            transform: translateY(0rem) rotate(0deg);
+            transition: 0.5s all;
+        }
+
+        .burgerMenu::after {
+            transform: translateY(0rem) rotate(0deg);
+            transition: 0.5s all;
+        }
+    }
+
+    .profileContainer {
+        .profileContents {
+            opacity: 0;
+        }
+    }
+
+    .contentsContainer {
+        a {
+            opacity: 0;
+        }
+    }
+}
+
+
+
 
 
 
@@ -117,133 +233,3 @@
         transition: 0.5s all;
     }
     */
-
-    //Texto Perfil
-    .profileContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        //height: 100vh; /* 100% of the viewport height */
-        padding: 2rem 0 0 0;
-
-        .profileContents {
-
-            text-align: center;
-
-            p.name {
-                padding: 0;
-                margin: 0;
-                font-size: 17px;
-                color: rgba($rosaClaro, 1);
-                text-transform: capitalize;
-                font-weight: $heavyFont;
-
-                text-shadow: 
-                    -1.5px -1.5px 0 rgba($rosa, 1),
-                    1.5px -1.5px 0 rgba($rosa, 1),
-                    -1.5px 1.5px 0 rgba($rosa, 1),
-                    1.5px 1.5px 0 rgba($rosa, 1);
-            }
-
-        }
-    }
-    
-
-    .contentsContainer {
-        margin: 2rem 0 0 0;
-
-        ul {
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            flex-direction: column;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-
-            li {
-                display: flex;
-                align-items: center;
-                justify-content: flex-start;
-                flex-direction: row;
-                margin: 0.75rem 0;
-                padding: 0.8rem 0;
-                width: 100%;
-                border-radius: 1rem;
-                cursor: pointer;
-
-                img {
-                    padding: 0 0.7rem 0 0.5rem;
-                    width: 29px;
-                }
-
-                a {
-                    text-decoration: none;
-                    color: rgba($azulClaro, 0.95);
-                    font-size: 17px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    margin: 0 0 0 0.5rem;
-                }
-            }
-            /*
-            li.active {
-                background-color: $rosa;
-
-                a {
-                    color: $rosa;
-                }
-            }
-            */
-            li:hover {
-                background-color: $rosa;
-                transition: 0.25s;
-                a {
-                    color: $rosaClaro;
-                }
-            }
-        }
-    }
-}
-
-.sidebar.active {
-    width: 3rem;
-    transition: 0.5s all;
-
-    .logoContainer.active {
-        h2.title {
-            opacity: 0;
-        }
-    }
-
-    .burgerContainer.active {
-        transition: 0.5s all;
-        .burgerMenu {
-            background-color: $rosaClaro;
-            transition: 0.5s all;
-        }
-
-        .burgerMenu::before {
-            transform: translateY(0rem) rotate(0deg);
-            transition: 0.5s all;
-        }
-
-        .burgerMenu::after {
-            transform: translateY(0rem) rotate(0deg);
-            transition: 0.5s all;
-        }
-    }
-
-    .profileContainer {
-        .profileContents {
-            opacity: 0;
-        }
-    }
-
-    .contentsContainer {
-        a {
-            opacity: 0;
-        }
-    }
-}
