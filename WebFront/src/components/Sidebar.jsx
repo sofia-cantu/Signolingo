@@ -2,12 +2,12 @@ import React from 'react'
 
 //import Icon from "../assets/Icon.svg";
 //<img src={Icon} alt="icon" className="logo" />
-import Dashboard from "../assets/dashboard.svg";
-import Transactions from "../assets/transactions.svg";
-import Performance from "../assets/performance.svg";
-import News from "../assets/news.svg";
-import Settings from "../assets/settings.svg";
-import Support from "../assets/support.svg";
+import Casa from "../assets/casa.svg";
+import Datos from "../assets/datos.svg";
+import CrearC from "../assets/crearC.svg";
+import CrearP from "../assets/crearP.svg";
+import EditarC from "../assets/editarC.svg";
+import EditarP from "../assets/editarP.svg";
 
 import logoSimple from '../assets/LogoSimple.png';
 
@@ -18,7 +18,7 @@ const Sidebar = () => {
 
       <div className="logoContainer">
         <a href="https://diloensenas.org/" target="_blank">
-          <img src={logoSimple} className="logo" alt="Dilo en Señas logo" />
+          <img src={logoSimple} className="logo" alt="Dilo en Señas logo"/>
         </a>
         <h2 className="title">Diccionario en Señas</h2>
       </div>
@@ -37,32 +37,32 @@ const Sidebar = () => {
       <div className="contentsContainer">
         <ul>
           <li>
-            <img src={Dashboard} alt="svg temporal" />
+            <img src={Casa} alt="svg temporal" class="SideBarSVG" />
             <a href="/">Pagina principal</a>
           </li>
 
           <li>
-            <img src={Transactions} alt="svg temporal" />
+            <img src={Datos} alt="svg temporal" class="SideBarSVG" />
             <a href="/datos">Datos</a>
           </li>
 
           <li>
-            <img src={Performance} alt="svg temporal" />
+            <img src={CrearC} alt="svg temporal" class="SideBarSVG" />
             <a href="/crear-categoria">Crear categoría</a>
           </li>
 
           <li>
-            <img src={News} alt="svg temporal" />
+            <img src={CrearP} alt="svg temporal" class="SideBarSVG" />
             <a href="/crear-palabra">Crear palabra</a>
           </li>
 
           <li>
-            <img src={Settings} alt="svg temporal" />
+            <img src={EditarC} alt="svg temporal" class="SideBarSVG" />
             <a href="/editar-categoria">Editar categoria</a>
           </li>
 
           <li>
-            <img src={Support} alt="svg temporal" />
+            <img src={EditarP} alt="svg temporal" class="SideBarSVG" />
             <a href="/editar-palabra">Editar palabra</a>
           </li>
 
