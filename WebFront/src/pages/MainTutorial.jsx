@@ -2,8 +2,11 @@ import React from 'react'
 
 const MainTutorial = () => {
     return (
-        <div>
-            <h1>Pagina Principal</h1>
+        <div class="paginas">
+            <h1>Bienvenido al editor de palabras y categorías de Signolingo</h1>
+            <br/>
+            <h2>Hola</h2>
+            <p>Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina Tutorial de la pagina </p>
         </div>
       )
 }

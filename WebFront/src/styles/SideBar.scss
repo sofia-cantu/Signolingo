@@ -10,7 +10,7 @@
     width: 14rem;
     height: 100vh;
 
-    //Area 1: Logo
+    //Area 1: Logo h: 3 rem
     .logoContainer {
         display: flex;
         align-items: center;
@@ -33,9 +33,9 @@
     }
 
 
-    //Area 2: Texto Perfil
+    //Area 2: Texto Perfil h: 2 rem
     .profileContainer {
-        padding: 2rem 0 0 0;
+        padding: 2rem 0 2rem 0;
 
         .profileContents {
             text-align: center;
@@ -57,7 +57,6 @@
     
     //Area 3: Navegador
     .contentsContainer {
-        margin: 2rem 0 0 0;
 
         ul {
             //display: flex;
@@ -69,8 +68,9 @@
                 //align-items: center;
                 justify-content: flex-start;
                 flex-direction: row;
-                margin: 0.75rem 0; //no se considera en el click, se considera desde el fin de la imagen
-                padding: 0.8rem 0; //se considera en el click, se considera desde el centr
+                // restarle 7.4 rem
+                //margin: 0rem 0; //no se considera en el click, se considera desde el fin de la imagen
+                padding: calc((100vh /9) - 3.5rem) 0; //se considera en el click, se considera desde el centro
                 width: 100%;
                 border-radius: 1rem;
                 cursor: pointer;
@@ -109,7 +109,7 @@
 }
 
 
-
+/*
 .sidebar.active {
     width: 3rem;
     transition: 0.5s all;
@@ -150,9 +150,7 @@
         }
     }
 }
-
-
-
+*/
 
 
 
@@ -217,10 +215,8 @@
             transition: 0.5s all;
         }
     }
-    */
     
     //Raya
-    /*
     .burgerContainer::after {
         content: "";
         position: absolute;

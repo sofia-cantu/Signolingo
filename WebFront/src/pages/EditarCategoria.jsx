@@ -2,7 +2,7 @@ import React from 'react'
 
 const EditarCategoria = () => {
   return (
-    <div>
+    <div class="paginas">
         <h1>Editar Categoría</h1>
     </div>
   )
