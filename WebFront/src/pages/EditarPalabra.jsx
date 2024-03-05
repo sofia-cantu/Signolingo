@@ -2,7 +2,7 @@ import React from 'react'
 
 const EditarPalabra = () => {
   return (
-    <div>
+    <div class="paginas">
         <h1>Editar Palabra</h1>
     </div>
   )

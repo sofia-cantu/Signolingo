@@ -10,19 +10,26 @@
 body {
   overflow: hidden;
   height: 100vh;
-  width: 100vw;
-  font-family: $fontFamily;
+  //width: 100vw;
+  margin-left: 7rem; //para que no considere el ancho del sidebar
+  font-family: $fontNormal;
   background-color: $rosaClaro;
   text-transform: capitalize;
+}
+
+div {
+  word-wrap: break-word;
+  //width: 100px;
 }
 
 h1 {
   width: 100vw;
   height: 100vh;
-  color: $azul;
+  color: black;
   display: flex;
   //align-items: center;
   justify-content: center;
+  font-family: $fontEspecial;
 }
 
 .temporal {
