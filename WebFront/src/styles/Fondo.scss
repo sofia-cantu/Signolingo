@@ -1,0 +1,23 @@
+@import "./_variables";
+
+.svgFondo {
+    position: fixed; /* or 'absolute' depending on your layout */
+    height: 20rem;
+    top: 0;
+    right: 0;
+    z-index: -1; /* Ensures it's in the background */
+
+}
+
+#abajo {
+    z-index: 1; /* Higher value to be on top */
+    filter: $azulF;
+}
+
+#arriba {
+    z-index: 2; /* Even higher value to be on top of svg1 */
+    margin-right: -20px; /* Adjust according to the desired overlap */
+    margin-top: -20px; /* Adjust according to the desired overlap */
+    margin-left: 5rem;
+    filter: $rosaF;
+}
