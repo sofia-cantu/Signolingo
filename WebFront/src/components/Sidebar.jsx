@@ -47,22 +47,22 @@ const Sidebar = () => {
           </li>
 
           <li>
-            <img src={CrearC} alt="svg temporal" class="SideBarSVG" />
+            <img src={CrearC} alt="svg sidebar" class="SideBarSVG" />
             <a href="/crear-categoria">Crear categoría</a>
           </li>
 
           <li>
-            <img src={CrearP} alt="svg temporal" class="SideBarSVG" />
+            <img src={CrearP} alt="svg sidebar" class="SideBarSVG" />
             <a href="/crear-palabra">Crear palabra</a>
           </li>
 
           <li>
-            <img src={EditarC} alt="svg temporal" class="SideBarSVG" />
+            <img src={EditarC} alt="svg sidebar" class="SideBarSVG" />
             <a href="/editar-categoria">Editar categoria</a>
           </li>
 
           <li>
-            <img src={EditarP} alt="svg temporal" class="SideBarSVG" />
+            <img src={EditarP} alt="svg sidebar" class="SideBarSVG" />
             <a href="/editar-palabra">Editar palabra</a>
           </li>
 

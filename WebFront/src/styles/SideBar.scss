@@ -35,7 +35,7 @@
 
     //Area 2: Texto Perfil h: 2 rem
     .profileContainer {
-        padding: 2rem 0 2rem 0;
+        padding: 2rem 0 1rem 0;
 
         .profileContents {
             text-align: center;
@@ -72,12 +72,12 @@
                 //margin: 0rem 0; //no se considera en el click, se considera desde el fin de la imagen
                 padding: calc((100vh /9) - 3.5rem) 0; //se considera en el click, se considera desde el centro
                 width: 100%;
-                border-radius: 1rem;
+                border-radius: 0.9rem;
                 cursor: pointer;
 
                 // Hex color to filter values: https://codepen.io/sosuke/pen/Pjoqqp 
                 .SideBarSVG {
-                    padding: 0 0.7rem 0 0.5rem;
+                    padding: 0 0.7rem 0 1rem;
                     width: 29px;
                     filter: $azulClaroF;
                 }

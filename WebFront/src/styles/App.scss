@@ -1,37 +1,38 @@
 @import "./_variables";
 
 #root {
-  /*max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;*/
+  //max-width: 100%;
 }
 
+// Sección 1: Base
 body {
-  overflow: hidden;
+  //overflow: hidden;
   height: 100vh;
-  //width: 100vw;
-  margin-left: 7rem; //para que no considere el ancho del sidebar
+  margin-left: 17rem;
   font-family: $fontNormal;
   background-color: $rosaClaro;
   text-transform: capitalize;
 }
 
-div {
-  word-wrap: break-word;
-  //width: 100px;
+div.paginas {
+  max-width: 100%;
 }
 
+
+// Sección 2: Texto
 h1 {
-  width: 100vw;
-  height: 100vh;
   color: black;
-  display: flex;
-  //align-items: center;
-  justify-content: center;
+  //display: flex;
+  //justify-content: center;
+  font-size: 3rem;
   font-family: $fontEspecial;
+  max-width: calc(100% - 19rem) !important;
 }
 
-.temporal {
-  color: #888;
+h2 {
+  color: black;
+}
+
+p {
+  color: black;
 }
