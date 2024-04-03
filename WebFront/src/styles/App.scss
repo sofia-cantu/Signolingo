@@ -29,7 +29,18 @@ h1 {
   max-width: calc(100% - 19rem) !important;
 }
 
+
 .paginas {
+  h2 {
+    color: black;
+    //display: flex;
+    //justify-content: center;
+    font-size: 1.5rem;
+    margin: 1rem 8.3rem 0.5rem 2rem;
+    font-family: $fontEspecial;
+    max-width: calc(100% - 19rem) !important;
+  }
+
   p {
     color: black;
     margin: 0 8.3rem 0 2rem;
