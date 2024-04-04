@@ -44,22 +44,17 @@ const Datos = () => {
         return category ? category.name : 'Categoría desconocida';
     };
 
-    // Función para encontrar la palabra por ID
-    const getWordById = (id) => {
-        const word = words.find((word) => word.id === parseInt(id));
-        return word ? word.word : 'Palabra desconocida';
-    };
-
     return (
         <div className="paginas" style={{ maxHeight: '100vh', overflowY: 'auto' }}>
             <h1>Datos</h1>
-            <p>Palabras regisadas:</p>
+            
+            <p>Categorías regisadas:</p>
             <div>
                 {words.map((word) => (
                     <div key={word.id}>
-                        <h2>{word.word} <span>(id: {word.categoryid})</span></h2>
+                        <h2>{word.word} <span class="id">(id: {word.id})</span></h2>
                         <p>
-                            Categoría: {getCategoryName(word.categoryid)} (id: {word.categoryid})<br/>
+                            Categoría: {getCategoryName(word.categoryid)} <span class="ids">(id: {word.categoryid})</span><br/>
                             Definición: {word.definition}<br/>
                             Primera palabra recomendada: {word.suggested1}<br/>
                             Segunda palabra recomendada: {word.suggested2}<br/>
@@ -71,6 +66,28 @@ const Datos = () => {
                     </div>
                 ))}
             </div>
+
+            <br/>
+            <br/>
+            <p>Palabras regisadas:</p>
+            <div>
+                {words.map((word) => (
+                    <div key={word.id}>
+                        <h2>{word.word} <span class="id">(id: {word.id})</span></h2>
+                        <p>
+                            Categoría: {getCategoryName(word.categoryid)} <span class="ids">(id: {word.categoryid})</span><br/>
+                            Definición: {word.definition}<br/>
+                            Primera palabra recomendada: {word.suggested1}<br/>
+                            Segunda palabra recomendada: {word.suggested2}<br/>
+                            Liga de la imagen: {word.image}<br/>
+                            Liga del video: {word.video}<br/>
+                            Liga del audio: {word.audio}
+                            Escaneo: {word.isscannable.toString()}<br/>
+                        </p>
+                    </div>
+                ))}
+            </div>
+
         </div>
     );
 };
