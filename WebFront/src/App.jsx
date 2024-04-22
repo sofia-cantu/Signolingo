@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Main from './pages/MainTutorial';
@@ -17,10 +17,19 @@ import "./styles/Fondo.scss"
 
 function App() {
  
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false); // Estado para controlar la visibilidad del sidebar
+
+  const toggleSidebar = useCallback(() => {  // Función para cambiar el estado del sidebar
+    setIsSidebarOpen(prevState => !prevState);
+  }, []);
+
   return (
     <Router>
       <div className='App'>
-        <Sidebar />
+        <button className="burgerContainer" onClick={toggleSidebar}></button>
+        <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
+            <Sidebar />
+        </div>
         <Fondo />
         <Routes>
           <Route path="/" element={<Main />} />

@@ -4,10 +4,20 @@
   //max-width: 100%;
 }
 
+// Media query para manejar la visibilidad basada en tamaño de pantalla
+/*
+@media (min-width: 768px) {
+  body {
+    margin-left: 17rem;  
+  }
+}
+*/
+
 // Sección 1: Base
 body {
   //overflow: hidden;
   height: 100vh;
+  //margin-left: 2rem;
   margin-left: 17rem;
   font-family: $fontNormal;
   background-color: $rosaClaro;
