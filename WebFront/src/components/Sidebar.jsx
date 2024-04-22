@@ -30,7 +30,7 @@ const Sidebar = () => {
 
       <div className="profileContainer">
         <div className="profileContents">
-          <p className="name">Hola, Caro.</p>
+          <p className="name">Hola, Sofía.</p>
         </div>
       </div>
 
